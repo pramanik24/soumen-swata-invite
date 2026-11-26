@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Soumen &amp; Swata — Engagement Ceremony Invitation | 16 • 04 • 2026</title>
+  <meta name="description" content="Together with their families, Soumen & Swata joyfully invite you to celebrate their Engagement Ceremony on Thursday, 16 April 2026." />
+
+  <!-- Google Fonts: Great Vibes, Cormorant Garamond, and Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ivory: {
+              saree: 'var(--bg-ivory)',
+              tint: '#F3E7D5',
+              backdrop: '#EFE2CE',
+            },
+            cream: {
+              DEFAULT: 'var(--bg-card)',
+            },
+            rani: {
+              DEFAULT: 'var(--primary-rani)',
+              light: '#C42B71',
+            },
+            crimson: {
+              DEFAULT: 'var(--deep-crimson)',
+            },
+            marigold: {
+              DEFAULT: 'var(--accent-marigold)',
+              light: '#FFE4A3',
+              deep: '#B07616',
+            },
+            teal: {
+              DEFAULT: 'var(--accent-teal)',
+            },
+            bark: {
+              DEFAULT: 'var(--text-bark)',
+              muted: 'var(--text-muted)',
+            }
+          },
+          fontFamily: {
+            script: ['"Great Vibes"', 'cursive'],
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+          },
+          boxShadow: {
+            'marigold-glow': '0 10px 28px rgba(212, 148, 36, 0.22)',
+            'card-luxury': '0 25px 65px -15px rgba(43, 24, 21, 0.28)',
+          }
+        }
+      }
+    };
+  </script>
+
+  <!-- Theme Variables, Custom Animations & Festive Styling -->
+  <style>
+    :root {
+      --bg-ivory: #FAF4EB;        /* Warm Saree Ivory */
+      --bg-card: #FFFDF9;         /* Soft Cream White */
+      --primary-rani: #A61C5B;    /* Rani Pink */
+      --deep-crimson: #8F1D22;    /* Sindoor Crimson */
+      --accent-marigold: #D49424; /* Marigold Ochre */
+      --accent-teal: #1F6E7A;     /* Peacock Teal */
+      --text-bark: #2B1815;       /* Espresso Bark */
+      --text-muted: #6E4E49;      /* Warm Espresso Muted */
+    }
+
+    @keyframes kenBurnsSlow {
+      0% {
+        transform: scale(1) translateY(0px);
+      }
+      50% {
+        transform: scale(1.07) translateY(-3px);
+      }
+      100% {
+        transform: scale(1) translateY(0px);
+      }
+    }
+
+    @keyframes floatGentle {
+      0%, 100% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(-6px);
+      }
+    }
+
+    @keyframes mandalaSpin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes eqPulse {
+      0%, 100% {
+        height: 4px;
+      }
+      50% {
+        height: 14px;
+      }
+    }
+
+    .animate-ken-burns {
+      animation: kenBurnsSlow 18s ease-in-out infinite;
+    }
+
+    .animate-float-gentle {
+      animation: floatGentle 3.2s ease-in-out infinite;
+    }
+
+    .animate-mandala-slow {
+      animation: mandalaSpin 48s linear infinite;
+    }
+
+    .eq-bar-1 { animation: eqPulse 0.9s ease-in-out infinite; }
+    .eq-bar-2 { animation: eqPulse 0.6s ease-in-out infinite 0.2s; }
+    .eq-bar-3 { animation: eqPulse 0.8s ease-in-out infinite 0.4s; }
+
+    /* Warm Saree Ivory radial illumination with Marigold & Rani Pink undertones */
+    .bg-ivory-luxury {
+      background-color: var(--bg-ivory);
+      background-image:
+        radial-gradient(circle at 50% 8%, rgba(212, 148, 36, 0.15) 0%, rgba(250, 244, 235, 0) 56%),
+        radial-gradient(circle at 88% 72%, rgba(166, 28, 91, 0.07) 0%, rgba(250, 244, 235, 0) 48%);
+    }
+
+    /* Rani Pink to Sindoor Crimson silk-thread gradient for calligraphy names */
+    .text-rani-gradient {
+      background: linear-gradient(135deg, #A61C5B 0%, #8F1D22 50%, #C42B71 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+
+<body class="bg-ivory-backdrop text-bark font-sans antialiased selection:bg-rani selection:text-cream overflow-x-hidden">
+
+  <!-- Centered Mobile-First Invitation Card Shell (Max-width 480px on Desktop, Full-bleed on Mobile) -->
+  <div id="app-shell" class="relative w-full max-w-[480px] mx-auto min-h-screen bg-ivory-saree shadow-card-luxury sm:border-x sm:border-marigold/45 overflow-hidden">
+
+    <!-- 1. Full-Screen HTML5 Canvas for Drifting Marigold & Rani Pink Petals -->
+    <canvas id="petal-canvas" aria-hidden="true" class="fixed inset-y-0 left-1/2 -translate-x-1/2 w-full max-w-[480px] h-full pointer-events-none z-30"></canvas>
+
+    <!-- 2. Floating Top-Right Ambient Celesta Music Box Toggle (Web Audio API) -->
+    <div class="fixed top-4 right-4 sm:right-[calc(50%-224px)] z-40">
+      <button
+        id="music-toggle-btn"
+        type="button"
+        aria-label="Toggle ambient music box"
+        class="group flex items-center gap-2.5 px-3.5 py-2 rounded-full bg-crimson/90 backdrop-blur-md border border-marigold/70 text-cream shadow-lg hover:border-marigold hover:bg-rani transition-all duration-300 active:scale-95"
+      >
+        <!-- Music Note Icon (Paused) -->
+        <span id="music-icon-idle" class="flex items-center justify-center w-4 h-4 text-marigold-light">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+            <path d="M19.952 1.651a.75.75 0 01.298.599V16.303a3 3 0 01-2.176 2.884l-1.32.377a2.553 2.553 0 11-1.403-4.909l2.311-.66a1.5 1.5 0 001.088-1.442V6.994l-9 2.572v9.737a3 3 0 01-2.176 2.884l-1.32.377a2.553 2.553 0 11-1.402-4.909l2.31-.66a1.5 1.5 0 001.088-1.442V5.25a.75.75 0 01.544-.721l10.5-3a.75.75 0 01.658.122z" />
+          </svg>
+        </span>
+        <!-- Equalizer Bars (Playing) -->
+        <span id="music-icon-playing" class="hidden items-end gap-[2px] w-4 h-4 pb-0.5 justify-center">
+          <span class="w-[2.5px] bg-marigold-light rounded-full eq-bar-1"></span>
+          <span class="w-[2.5px] bg-marigold rounded-full eq-bar-2"></span>
+          <span class="w-[2.5px] bg-marigold-light rounded-full eq-bar-3"></span>
+        </span>
+        <span id="music-label" class="text-[11px] font-medium tracking-wider uppercase text-cream">Play Music</span>
+      </button>
+    </div>
+
+    <!-- ===================================================================== -->
+    <!-- 3. HERO INVITATION SECTION                                            -->
+    <!-- ===================================================================== -->
+    <header class="relative bg-ivory-luxury pt-16 pb-12 px-6 text-center flex flex-col items-center">
+      <!-- Ornamental Corner Filigree Frames -->
+      <svg aria-hidden="true" class="absolute top-3 left-3 w-14 h-14 text-marigold/60 pointer-events-none" viewBox="0 0 64 64" fill="none">
+        <path d="M2 42V14C2 7.37258 7.37258 2 14 2H42" stroke="currentColor" stroke-width="1.2"/>
+        <path d="M8 34V16C8 11.5817 11.5817 8 16 8H34" stroke="currentColor" stroke-width="0.8" stroke-dasharray="2 2"/>
+        <circle cx="14" cy="14" r="2.2" fill="currentColor"/>
+      </svg>
+      <svg aria-hidden="true" class="absolute top-3 right-3 w-14 h-14 text-marigold/60 pointer-events-none rotate-90" viewBox="0 0 64 64" fill="none">
+        <path d="M2 42V14C2 7.37258 7.37258 2 14 2H42" stroke="currentColor" stroke-width="1.2"/>
+        <path d="M8 34V16C8 11.5817 11.5817 8 16 8H34" stroke="currentColor" stroke-width="0.8" stroke-dasharray="2 2"/>
+        <circle cx="14" cy="14" r="2.2" fill="currentColor"/>
+      </svg>
+
+      <!-- Ornamental Marigold Mandala / Floral SVG Header -->
+      <div data-animate="fade-up" class="opacity-0 translate-y-6 transition-all duration-700 ease-out mb-4 relative flex items-center justify-center">
+        <svg aria-hidden="true" class="w-16 h-16 text-marigold animate-mandala-slow" viewBox="0 0 80 80" fill="none">
+          <circle cx="40" cy="40" r="34" stroke="currentColor" stroke-width="0.8" stroke-dasharray="3 3" />
+          <circle cx="40" cy="40" r="24" stroke="currentColor" stroke-width="1" />
+          <path d="M40 6C44 18 52 24 64 24C52 28 46 34 40 46C34 34 28 28 16 24C28 24 36 18 40 6Z" stroke="currentColor" stroke-width="1" fill="rgba(212,148,36,0.14)" />
+          <path d="M40 74C44 62 52 56 64 56C52 52 46 46 40 34C34 46 28 52 16 56C28 56 36 62 40 74Z" stroke="currentColor" stroke-width="1" fill="rgba(212,148,36,0.14)" />
+          <path d="M6 40C18 36 24 28 24 16C28 28 34 34 46 40C34 46 28 52 24 64C24 52 18 44 6 40Z" stroke="currentColor" stroke-width="0.9" />
+          <path d="M74 40C62 36 56 28 56 16C52 28 46 34 34 40C46 46 52 52 56 64C56 52 62 44 74 40Z" stroke="currentColor" stroke-width="0.9" />
+        </svg>
+        <span class="absolute w-2.5 h-2.5 rounded-full bg-rani shadow-marigold-glow"></span>
+      </div>
+
+      <!-- Family Blessing Line -->
+      <p data-animate="fade-up" data-delay="100" class="opacity-0 translate-y-6 transition-all duration-700 ease-out font-serif italic text-bark-muted text-base sm:text-lg tracking-wide">
+        Together with their families
+      </p>
+
+      <!-- Animated Calligraphy Names -->
+      <div data-animate="fade-up" data-delay="150" class="opacity-0 translate-y-6 transition-all duration-700 ease-out mt-2 mb-1">
+        <h1 class="font-script text-[3.5rem] sm:text-[4rem] leading-[1.08] text-rani-gradient drop-shadow-sm">
+          Soumen <span class="font-serif italic text-3xl sm:text-4xl text-marigold align-middle mx-0.5">&amp;</span> Swata
+        </h1>
+      </div>
+
+      <!-- Invitation Subtitle -->
+      <p data-animate="fade-up" data-delay="200" class="opacity-0 translate-y-6 transition-all duration-700 ease-out text-xs sm:text-sm uppercase tracking-[0.2em] text-teal font-semibold max-w-xs mx-auto leading-relaxed mb-7">
+        Invite you to celebrate their Engagement Ceremony
+      </p>
+
+      <!-- Hero Arched Couple Photo (`1000388585.jpg`) with Tap-to-Zoom Lightbox -->
+      <div data-animate="scale-in" data-delay="250" class="opacity-0 scale-95 transition-all duration-700 ease-out relative w-64 sm:w-72 mx-auto mb-8">
+        <!-- Outer Offset Marigold Arch Border -->
+        <div aria-hidden="true" class="absolute -inset-2.5 rounded-t-full rounded-b-2xl border border-marigold/60 pointer-events-none"></div>
+
+        <!-- Primary Marigold & Rani Trimmed Arched Frame -->
+        <button
+          type="button"
+          data-lightbox-index="0"
+          aria-label="View Soumen and Swata hero photo full screen"
+          class="group block w-full text-left relative aspect-[3/4] rounded-t-full rounded-b-xl p-1.5 bg-gradient-to-b from-marigold-light via-marigold to-crimson shadow-marigold-glow focus:outline-none focus:ring-2 focus:ring-rani cursor-pointer"
+        >
+          <div class="relative w-full h-full rounded-t-full rounded-b-lg overflow-hidden bg-ivory-tint">
+            <img
+              src="1000388585.jpg"
+              onerror="this.onerror=null;this.src='https://placehold.co/600x800/FAF4EB/A61C5B?text=Soumen+%26+Swata';"
+              alt="Soumen and Swata standing together under a red and pink floral arch"
+              style="object-fit: cover; object-position: center 20%;"
+              class="w-full h-full animate-ken-burns transition-transform duration-500 group-hover:scale-105"
+            />
+            <!-- Subtle Warm Bottom Vignette -->
+            <div class="absolute inset-0 bg-gradient-to-t from-bark/45 via-transparent to-transparent pointer-events-none"></div>
+            <!-- Tap Hint Pill -->
+            <span class="absolute bottom-3 right-3 px-2.5 py-1 rounded-full bg-crimson/85 backdrop-blur-sm border border-marigold/60 text-[10px] uppercase tracking-wider text-cream opacity-95 group-hover:opacity-100 transition-opacity">
+              Tap to view
+            </span>
+          </div>
+        </button>
+
+        <!-- Bottom Interlocking Rings Medallion -->
+        <div class="absolute -bottom-4 left-1/2 -translate-x-1/2 w-10 h-10 rounded-full bg-cream border border-marigold flex items-center justify-center shadow-md pointer-events-none">
+          <svg aria-hidden="true" class="w-5 h-5 text-rani" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+            <circle cx="9.5" cy="13.5" r="5" />
+            <circle cx="14.5" cy="13.5" r="5" />
+            <path d="M12 5L13.5 7.5H10.5L12 5Z" fill="currentColor" />
+          </svg>
+        </div>
+      </div>
+
+      <!-- Gilded Date Emblem: 16 • 04 • 2026 | Thursday, 16 April 2026 -->
+      <div data-animate="fade-up" data-delay="300" class="opacity-0 translate-y-6 transition-all duration-700 ease-out w-full max-w-[330px] mx-auto mt-2">
+        <div class="rounded-2xl border border-marigold/75 bg-cream/95 backdrop-blur-md px-5 py-4 shadow-marigold-glow">
+          <p class="font-serif font-bold text-2xl sm:text-[26px] tracking-[0.22em] text-crimson">
+            16 &bull; 04 &bull; 2026
+          </p>
+          <div class="w-24 h-[1px] bg-gradient-to-r from-transparent via-marigold to-transparent mx-auto my-2"></div>
+          <p class="font-serif italic text-base sm:text-lg text-bark tracking-wide">
+            Thursday, 16 April 2026
+          </p>
+        </div>
+      </div>
+
+      <!-- Gentle Scroll Prompt -->
+      <a href="#countdown-section" aria-label="Scroll down to view moments and venue details" class="mt-7 inline-flex flex-col items-center gap-1 text-rani/85 hover:text-crimson transition-colors animate-float-gentle">
+        <span class="text-[10px] uppercase tracking-[0.22em] font-medium">Scroll</span>
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.6" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+        </svg>
+      </a>
+    </header>
+
+    <!-- ===================================================================== -->
+    <!-- 4. DATE & COUNTDOWN SECTION                                           -->
+    <!-- ===================================================================== -->
+    <section id="countdown-section" class="relative bg-ivory-tint/75 py-11 px-6 border-t border-marigold/35 text-center">
+      <!-- Poetic Quote -->
+      <div data-animate="fade-up" class="opacity-0 translate-y-6 transition-all duration-700 ease-out max-w-sm mx-auto mb-7">
+        <p class="font-serif italic text-xl sm:text-[22px] leading-relaxed text-bark">
+          “Two souls with but a single thought, two hearts that beat as one.”
+        </p>
+      </div>
+
+      <!-- Countdown State (Shown when current browser time < 2026-04-16T18:30:00) -->
+      <div id="live-countdown-wrapper" data-animate="scale-in" data-delay="100" class="opacity-0 scale-95 transition-all duration-700 ease-out">
+        <p class="text-[11px] font-semibold uppercase tracking-[0.24em] text-teal mb-4">
+          Counting Down To 16 April 2026
+        </p>
+        <div class="grid grid-cols-4 gap-2.5 sm:gap-3 max-w-sm mx-auto">
+          <div class="rounded-2xl bg-gradient-to-b from-crimson to-[#721419] border border-marigold/75 py-3.5 px-2 shadow-marigold-glow flex flex-col items-center justify-center">
+            <span id="cd-days" class="font-serif font-bold text-2xl sm:text-3xl text-marigold-light tabular-nums">00</span>
+            <span class="text-[10px] uppercase tracking-[0.16em] text-cream/85 mt-1">Days</span>
+          </div>
+          <div class="rounded-2xl bg-gradient-to-b from-crimson to-[#721419] border border-marigold/75 py-3.5 px-2 shadow-marigold-glow flex flex-col items-center justify-center">
+            <span id="cd-hours" class="font-serif font-bold text-2xl sm:text-3xl text-marigold-light tabular-nums">00</span>
+            <span class="text-[10px] uppercase tracking-[0.16em] text-cream/85 mt-1">Hours</span>
+          </div>
+          <div class="rounded-2xl bg-gradient-to-b from-crimson to-[#721419] border border-marigold/75 py-3.5 px-2 shadow-marigold-glow flex flex-col items-center justify-center">
+            <span id="cd-minutes" class="font-serif font-bold text-2xl sm:text-3xl text-marigold-light tabular-nums">00</span>
+            <span class="text-[10px] uppercase tracking-[0.16em] text-cream/85 mt-1">Mins</span>
+          </div>
+          <div class="rounded-2xl bg-gradient-to-b from-crimson to-[#721419] border border-marigold/75 py-3.5 px-2 shadow-marigold-glow flex flex-col items-center justify-center">
+            <span id="cd-seconds" class="font-serif font-bold text-2xl sm:text-3xl text-cream tabular-nums">00</span>
+            <span class="text-[10px] uppercase tracking-[0.16em] text-cream/85 mt-1">Secs</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Celebratory Milestone State (Shown automatically if browser date is past 16 April 2026) -->
+      <div id="celebration-milestone-wrapper" class="hidden max-w-sm mx-auto">
+        <div class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-gradient-to-r from-crimson via-rani to-crimson border border-marigold shadow-marigold-glow">
+          <span class="text-marigold-light text-sm">✨</span>
+          <span class="font-serif font-semibold text-sm sm:text-base tracking-wide text-marigold-light">
+            16 April 2026 &bull; The Beginning of Forever
+          </span>
+          <span class="text-marigold-light text-sm">✨</span>
+        </div>
+        <p class="text-xs text-bark-muted mt-3 tracking-wide">
+          Celebrating our engagement milestone with love &amp; gratitude
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- 5. PHOTO GALLERY SECTION ("CAPTURED MOMENTS")                         -->
+    <!-- ===================================================================== -->
+    <section class="relative bg-ivory-luxury py-12 px-5 sm:px-7 border-t border-marigold/30">
+      <div data-animate="fade-up" class="opacity-0 translate-y-6 transition-all duration-700 ease-out text-center mb-8">
+        <span class="text-[11px] font-semibold uppercase tracking-[0.24em] text-teal">
+          Cherished Memories
+        </span>
+        <h2 class="font-serif font-semibold text-3xl sm:text-[34px] text-crimson mt-1">
+          Captured Moments
+        </h2>
+        <div class="w-16 h-[1.5px] bg-marigold mx-auto mt-3 rounded-full"></div>
+      </div>
+
+      <div class="space-y-7">
+        <!-- Moments Gallery Card 1: `1000389022.png` / `1000389022.jpg` -->
+        <article data-animate="fade-up" data-delay="100" class="opacity-0 translate-y-6 transition-all duration-700 ease-out rounded-3xl p-2 bg-gradient-to-b from-marigold-light via-marigold to-rani/75 shadow-marigold-glow">
+          <button
+            type="button"
+            data-lightbox-index="1"
+            aria-label="View Blessed Beginnings photo full screen"
+            class="group block w-full text-left rounded-[20px] overflow-hidden bg-cream focus:outline-none focus:ring-2 focus:ring-rani cursor-pointer"
+          >
+            <div class="relative w-full aspect-[4/3] overflow-hidden">
+              <img
+                src="1000389022.png"
+                onerror="if(!this.dataset.triedJpg){this.dataset.triedJpg='1';this.src='1000389022.jpg';}else{this.onerror=null;this.src='https://placehold.co/800x600/FAF4EB/A61C5B?text=Blessed+Beginnings';}"
+                alt="Soumen and Swata seeking blessings together before the golden Maa Durga idol"
+                style="object-fit: cover; object-position: center 25%;"
+                class="w-full h-full transition-transform duration-700 group-hover:scale-105"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-bark/40 via-transparent to-transparent pointer-events-none"></div>
+              <span class="absolute top-3 right-3 w-8 h-8 rounded-full bg-crimson/80 backdrop-blur-sm border border-marigold/65 flex items-center justify-center text-cream">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+                </svg>
+              </span>
+            </div>
+            <div class="px-5 py-3.5 bg-cream flex items-center justify-between border-t border-marigold/35">
+              <div>
+                <h3 class="font-serif italic text-xl font-semibold text-rani">Blessed Beginnings</h3>
+                <p class="text-[11px] text-bark-muted tracking-wide">With divine grace &amp; family blessings</p>
+              </div>
+              <span class="text-marigold text-lg">✦</span>
+            </div>
+          </button>
+        </article>
+
+        <!-- Moments Gallery Card 2: `1000388717.jpg` -->
+        <article data-animate="fade-up" data-delay="200" class="opacity-0 translate-y-6 transition-all duration-700 ease-out rounded-3xl p-2 bg-gradient-to-b from-marigold-light via-marigold to-rani/75 shadow-marigold-glow">
+          <button
+            type="button"
+            data-lightbox-index="2"
+            aria-label="View Together Forever photo full screen"
+            class="group block w-full text-left rounded-[20px] overflow-hidden bg-cream focus:outline-none focus:ring-2 focus:ring-rani cursor-pointer"
+          >
+            <div class="relative w-full aspect-[4/3] overflow-hidden">
+              <img
+                src="1000388717.jpg"
+                onerror="this.onerror=null;this.src='https://placehold.co/800x600/FAF4EB/A61C5B?text=Together+Forever';"
+                alt="Soumen and Swata smiling together outdoors near heritage pillars"
+                style="object-fit: cover; object-position: center 20%;"
+                class="w-full h-full transition-transform duration-700 group-hover:scale-105"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-bark/40 via-transparent to-transparent pointer-events-none"></div>
+              <span class="absolute top-3 right-3 w-8 h-8 rounded-full bg-crimson/80 backdrop-blur-sm border border-marigold/65 flex items-center justify-center text-cream">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+                </svg>
+              </span>
+            </div>
+            <div class="px-5 py-3.5 bg-cream flex items-center justify-between border-t border-marigold/35">
+              <div>
+                <h3 class="font-serif italic text-xl font-semibold text-rani">Together Forever</h3>
+                <p class="text-[11px] text-bark-muted tracking-wide">Hand in hand into a lifetime of love</p>
+              </div>
+              <span class="text-marigold text-lg">✦</span>
+            </div>
+          </button>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- 6. CEREMONY SCHEDULE, VENUE CARD & CLOSING BLESSING CARD              -->
+    <!-- ===================================================================== -->
+    <section class="relative bg-cream text-bark py-12 px-5 sm:px-7 rounded-t-[2rem] border-t border-marigold/35 shadow-inner">
+      <!-- Section Heading -->
+      <div data-animate="fade-up" class="opacity-0 translate-y-6 transition-all duration-700 ease-out text-center mb-7">
+        <span class="text-[11px] font-semibold uppercase tracking-[0.22em] text-teal">
+          Auspicious Celebrations
+        </span>
+        <h2 class="font-serif font-semibold text-3xl sm:text-[34px] text-crimson mt-1">
+          Ceremony &amp; Venue
+        </h2>
+        <div class="w-16 h-[1.5px] bg-marigold mx-auto mt-3 rounded-full"></div>
+      </div>
+
+      <!-- Luxury Framed Ceremony & Venue Card -->
+      <div data-animate="scale-in" data-delay="100" class="opacity-0 scale-95 transition-all duration-700 ease-out rounded-3xl bg-ivory-saree border border-marigold/60 p-6 shadow-md relative overflow-hidden">
+        <!-- Top Rani & Marigold Foil Accent Strip -->
+        <div class="absolute top-0 inset-x-0 h-1.5 bg-gradient-to-r from-rani via-marigold to-crimson"></div>
+
+        <!-- Date Row -->
+        <div class="flex items-start gap-3.5 pb-5 border-b border-marigold/25">
+          <div class="w-11 h-11 rounded-xl bg-cream border border-marigold/55 flex items-center justify-center shrink-0 text-rani">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+              <line x1="16" y1="2" x2="16" y2="6"></line>
+              <line x1="8" y1="2" x2="8" y2="6"></line>
+              <line x1="3" y1="10" x2="21" y2="10"></line>
+            </svg>
+          </div>
+          <div>
+            <p class="text-[11px] uppercase tracking-wider text-teal font-semibold">Engagement Date</p>
+            <p class="font-serif font-bold text-xl text-bark leading-snug">
+              Thursday, 16 April 2026
+            </p>
+            <p class="text-xs font-semibold tracking-widest text-rani mt-0.5">
+              16 / 04 / 2026
+            </p>
+          </div>
+        </div>
+
+        <!-- Ceremony Schedule -->
+        <div class="py-5 border-b border-marigold/25 space-y-3.5">
+          <p class="text-[11px] uppercase tracking-[0.18em] text-crimson font-semibold">
+            Evening Schedule
+          </p>
+
+          <div class="flex items-center justify-between gap-2 p-3 rounded-xl bg-cream border border-marigold/35">
+            <div class="flex items-center gap-2.5">
+              <span class="text-base">💍</span>
+              <span class="font-medium text-sm text-bark">Ring Ceremony</span>
+            </div>
+            <span class="font-serif font-bold text-base text-rani shrink-0">6:30 PM Onwards</span>
+          </div>
+
+          <div class="flex items-center justify-between gap-2 p-3 rounded-xl bg-cream border border-marigold/35">
+            <div class="flex items-center gap-2.5">
+              <span class="text-base">✨</span>
+              <span class="font-medium text-sm text-bark">Engagement Feast &amp; Celebration</span>
+            </div>
+            <span class="font-serif font-bold text-base text-rani shrink-0">8:00 PM</span>
+          </div>
+        </div>
+
+        <!-- Venue Details -->
+        <div class="pt-5">
+          <div class="flex items-start gap-3.5">
+            <div class="w-11 h-11 rounded-xl bg-cream border border-marigold/55 flex items-center justify-center shrink-0 text-rani mt-0.5">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.7" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 21c-4.418-4.418-7-7.79-7-11a7 7 0 1114 0c0 3.21-2.582 6.582-7 11z" />
+                <circle cx="12" cy="10" r="2.5" />
+              </svg>
+            </div>
+            <div>
+              <p class="text-[11px] uppercase tracking-wider text-teal font-semibold">Venue</p>
+              <h3 class="font-serif font-bold text-xl text-crimson leading-tight mt-0.5">
+                The Royal Orchid Banquet
+              </h3>
+              <p class="text-xs sm:text-sm text-bark-muted mt-1 leading-relaxed">
+                EM Bypass, Kolkata, West Bengal
+              </p>
+            </div>
+          </div>
+
+          <!-- Two Sleek Action Buttons: Google Maps & Add to Calendar -->
+          <div class="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=The+Royal+Orchid+Banquet+Kolkata"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl bg-gradient-to-r from-rani to-crimson text-cream font-medium text-xs sm:text-sm tracking-wide shadow-sm hover:brightness-105 transition-all duration-200 active:scale-[0.98]"
+            >
+              <svg class="w-4 h-4 text-marigold-light shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+              </svg>
+              <span>Open in Google Maps</span>
+            </a>
+
+            <a
+              href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Soumen+%26+Swata+Engagement+Ceremony&dates=20260416T130000Z/20260416T173000Z&details=Together+with+their+families%2C+Soumen+%26+Swata+joyfully+invite+you+to+celebrate+their+Engagement+Ceremony+on+Thursday%2C+16+April+2026.&location=The+Royal+Orchid+Banquet%2C+Kolkata"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center gap-2 py-3.5 px-4 rounded-xl bg-cream border border-marigold text-crimson font-semibold text-xs sm:text-sm tracking-wide hover:bg-ivory-tint/70 transition-all duration-200 active:scale-[0.98]"
+            >
+              <svg class="w-4 h-4 text-marigold shrink-0" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              <span>Add to Calendar</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===================================================================== -->
+      <!-- 7. CLOSING BLESSING CARD & SHARE INVITATION BUTTON                    -->
+      <!-- ===================================================================== -->
+      <div data-animate="fade-up" data-delay="150" class="opacity-0 translate-y-6 transition-all duration-700 ease-out mt-9 rounded-3xl bg-gradient-to-br from-crimson via-[#7D171C] to-[#5E0F13] text-cream p-7 text-center border border-marigold/70 shadow-lg relative overflow-hidden">
+        <!-- Decorative Top Marigold Diamond -->
+        <div class="w-8 h-8 rounded-full border border-marigold/70 mx-auto mb-3 flex items-center justify-center text-marigold-light text-xs">
+          ✦
+        </div>
+
+        <h3 class="font-serif italic text-2xl sm:text-[26px] text-marigold-light leading-snug">
+          With Warmest Regards
+        </h3>
+
+        <p class="text-xs sm:text-sm text-cream/95 leading-relaxed mt-3 max-w-xs mx-auto">
+          “Your presence and blessings will make our special day truly memorable.”
+        </p>
+
+        <div class="w-20 h-[1px] bg-marigold/45 mx-auto my-5"></div>
+
+        <!-- Share Invitation Button (Web Share API + Clipboard Fallback) -->
+        <button
+          id="share-invite-btn"
+          type="button"
+          class="inline-flex items-center justify-center gap-2.5 w-full sm:w-auto px-7 py-3.5 rounded-xl bg-gradient-to-r from-marigold via-marigold-light to-marigold text-bark font-semibold text-xs sm:text-sm tracking-wider uppercase shadow-marigold-glow hover:brightness-105 transition-all duration-200 active:scale-[0.98]"
+        >
+          <svg class="w-4 h-4 shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+          </svg>
+          <span>Share Invitation</span>
+        </button>
+
+        <!-- Non-intrusive Share Toast Feedback -->
+        <p id="share-feedback-toast" role="status" class="hidden text-xs font-medium text-marigold-light mt-3 tracking-wide">
+          Invitation details copied to clipboard!
+        </p>
+      </div>
+    </section>
+
+    <!-- ===================================================================== -->
+    <!-- FOOTER                                                                -->
+    <!-- ===================================================================== -->
+    <footer class="bg-[#5A0E12] text-center py-9 px-6 border-t border-marigold/45">
+      <div class="w-12 h-12 rounded-full border border-marigold/70 mx-auto flex items-center justify-center mb-3 bg-crimson/80">
+        <span class="font-serif italic text-lg text-marigold-light">S&amp;S</span>
+      </div>
+      <p class="font-script text-3xl text-marigold-light">Soumen &amp; Swata</p>
+      <p class="text-[11px] uppercase tracking-[0.24em] text-cream/85 mt-3">
+        16 &bull; 04 &bull; 2026 &bull; Kolkata
+      </p>
+    </footer>
+
+  </div>
+
+  <!-- ======================================================================= -->
+  <!-- FULL-SCREEN PHOTO LIGHTBOX MODAL                                        -->
+  <!-- ======================================================================= -->
+  <div
+    id="photo-lightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Couple photo full-screen viewer"
+    class="fixed inset-0 z-50 hidden items-center justify-center bg-bark/92 backdrop-blur-md p-4 sm:p-6"
+  >
+    <!-- Close Button -->
+    <button
+      id="lightbox-close-btn"
+      type="button"
+      aria-label="Close photo viewer"
+      class="absolute top-4 right-4 z-10 w-11 h-11 rounded-full bg-crimson/85 border border-marigold/65 text-cream flex items-center justify-center hover:bg-rani transition-colors active:scale-95"
+    >
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+
+    <!-- Previous Photo Button -->
+    <button
+      id="lightbox-prev-btn"
+      type="button"
+      aria-label="Previous photo"
+      class="absolute left-3 sm:left-6 z-10 w-10 h-10 rounded-full bg-crimson/85 border border-marigold/60 text-cream flex items-center justify-center hover:bg-rani transition-colors active:scale-95"
+    >
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+      </svg>
+    </button>
+
+    <!-- Lightbox Image & Caption Container -->
+    <div class="relative max-w-lg w-full flex flex-col items-center">
+      <div class="p-1.5 rounded-2xl bg-gradient-to-b from-marigold-light via-marigold to-rani shadow-2xl">
+        <img
+          id="lightbox-img"
+          src=""
+          alt="Soumen and Swata"
+          class="max-h-[75vh] w-auto max-w-full rounded-xl object-contain bg-ivory-saree"
+        />
+      </div>
+      <div class="text-center mt-4 px-4">
+        <h4 id="lightbox-title" class="font-serif italic text-2xl text-marigold-light"></h4>
+        <p id="lightbox-subtitle" class="text-xs text-cream/85 tracking-wider mt-0.5"></p>
+      </div>
+    </div>
+
+    <!-- Next Photo Button -->
+    <button
+      id="lightbox-next-btn"
+      type="button"
+      aria-label="Next photo"
+      class="absolute right-3 sm:right-6 z-10 w-10 h-10 rounded-full bg-crimson/85 border border-marigold/60 text-cream flex items-center justify-center hover:bg-rani transition-colors active:scale-95"
+    >
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+      </svg>
+    </button>
+  </div>
+
+  <!-- ======================================================================= -->
+  <!-- JAVASCRIPT: CANVAS PETALS, SCROLL REVEAL, COUNTDOWN, LIGHTBOX, MUSIC    -->
+  <!-- ======================================================================= -->
+  <script>
+    (function () {
+      'use strict';
+
+      /* ---------------------------------------------------------------------
+       * 1. HTML5 CANVAS: DRIFTING MARIGOLD & RANI PINK PETALS + GOLD DUST
+       * ------------------------------------------------------------------- */
+      const canvas = document.getElementById('petal-canvas');
+      const ctx = canvas ? canvas.getContext('2d') : null;
+      let particles = [];
+      let canvasWidth = 0;
+      let canvasHeight = 0;
+
+      function resizeCanvas() {
+        if (!canvas || !ctx) return;
+        const rect = canvas.getBoundingClientRect();
+        const dpr = Math.min(window.devicePixelRatio || 1, 2);
+        canvasWidth = rect.width;
+        canvasHeight = rect.height;
+        canvas.width = canvasWidth * dpr;
+        canvas.height = canvasHeight * dpr;
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      }
+
+      class GoldenParticle {
+        constructor() {
+          this.reset(true);
+        }
+
+        reset(initial = false) {
+          const roll = Math.random();
+          this.type = roll < 0.42 ? 'stardust' : roll < 0.74 ? 'marigold-petal' : 'rani-petal';
+          this.x = Math.random() * canvasWidth;
+          this.y = initial ? Math.random() * canvasHeight : -20;
+          this.size = this.type !== 'stardust'
+            ? 4.2 + Math.random() * 4.5
+            : 1.5 + Math.random() * 2.3;
+          this.speedY = 0.35 + Math.random() * 0.72;
+          this.speedX = (Math.random() - 0.5) * 0.42;
+          this.swayOffset = Math.random() * Math.PI * 2;
+          this.swaySpeed = 0.015 + Math.random() * 0.02;
+          this.rotation = Math.random() * Math.PI * 2;
+          this.rotationSpeed = (Math.random() - 0.5) * 0.03;
+          this.baseAlpha = this.type !== 'stardust'
+            ? 0.28 + Math.random() * 0.32
+            : 0.45 + Math.random() * 0.45;
+        }
+
+        update() {
+          this.swayOffset += this.swaySpeed;
+          this.x += this.speedX + Math.sin(this.swayOffset) * 0.35;
+          this.y += this.speedY;
+          this.rotation += this.rotationSpeed;
+
+          if (this.y > canvasHeight + 25) {
+            this.reset(false);
+          }
+          if (this.x < -20) this.x = canvasWidth + 15;
+          if (this.x > canvasWidth + 20) this.x = -15;
+        }
+
+        draw(context) {
+          const twinkle = this.type === 'stardust'
+            ? 0.6 + 0.4 * Math.sin(this.swayOffset * 2.6)
+            : 1;
+          const alpha = Math.max(0, this.baseAlpha * twinkle);
+
+          context.save();
+          context.translate(this.x, this.y);
+          context.rotate(this.rotation);
+          context.globalAlpha = alpha;
+
+          if (this.type === 'marigold-petal' || this.type === 'rani-petal') {
+            const grad = context.createLinearGradient(-this.size, -this.size, this.size, this.size);
+            if (this.type === 'marigold-petal') {
+              grad.addColorStop(0, '#FFE4A3');
+              grad.addColorStop(0.55, '#D49424');
+              grad.addColorStop(1, '#B07616');
+            } else {
+              grad.addColorStop(0, '#F48FB1');
+              grad.addColorStop(0.55, '#A61C5B');
+              grad.addColorStop(1, '#8F1D22');
+            }
+            context.fillStyle = grad;
+
+            context.beginPath();
+            context.moveTo(0, -this.size);
+            context.bezierCurveTo(
+              this.size * 0.9, -this.size * 0.4,
+              this.size * 0.9, this.size * 0.6,
+              0, this.size
+            );
+            context.bezierCurveTo(
+              -this.size * 0.9, this.size * 0.6,
+              -this.size * 0.9, -this.size * 0.4,
+              0, -this.size
+            );
+            context.fill();
+          } else {
+            const radGrad = context.createRadialGradient(0, 0, 0, 0, 0, this.size * 2.3);
+            radGrad.addColorStop(0, '#FFFDF9');
+            radGrad.addColorStop(0.45, '#D49424');
+            radGrad.addColorStop(1, 'rgba(212, 148, 36, 0)');
+            context.fillStyle = radGrad;
+            context.beginPath();
+            context.arc(0, 0, this.size * 2.3, 0, Math.PI * 2);
+            context.fill();
+          }
+
+          context.restore();
+        }
+      }
+
+      function initParticles() {
+        resizeCanvas();
+        const count = window.innerWidth < 480 ? 28 : 38;
+        particles = [];
+        for (let i = 0; i < count; i++) {
+          particles.push(new GoldenParticle());
+        }
+      }
+
+      function animateCanvas() {
+        if (!ctx) return;
+        ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+        for (let i = 0; i < particles.length; i++) {
+          particles[i].update();
+          particles[i].draw(ctx);
+        }
+        requestAnimationFrame(animateCanvas);
+      }
+
+      /* ---------------------------------------------------------------------
+       * 2. SCROLL-TRIGGERED REVEAL ANIMATIONS (INTERSECTION OBSERVER)
+       * ------------------------------------------------------------------- */
+      function initScrollAnimations() {
+        const animatedEls = document.querySelectorAll('[data-animate]');
+        if (!('IntersectionObserver' in window)) {
+          animatedEls.forEach((el) => {
+            el.classList.remove('opacity-0', 'translate-y-6', 'scale-95');
+            el.classList.add('opacity-100', 'translate-y-0', 'scale-100');
+          });
+          return;
+        }
+
+        const observer = new IntersectionObserver(
+          (entries, obs) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                const el = entry.target;
+                const delay = el.getAttribute('data-delay');
+                if (delay) {
+                  el.style.transitionDelay = `${delay}ms`;
+                }
+                el.classList.remove('opacity-0', 'translate-y-6', 'scale-95');
+                el.classList.add('opacity-100', 'translate-y-0', 'scale-100');
+                obs.unobserve(el);
+              }
+            });
+          },
+          { threshold: 0.14, rootMargin: '0px 0px -20px 0px' }
+        );
+
+        animatedEls.forEach((el) => observer.observe(el));
+      }
+
+      /* ---------------------------------------------------------------------
+       * 3. COUNTDOWN TIMER TARGETING 2026-04-16T18:30:00
+       * ------------------------------------------------------------------- */
+      function initCountdown() {
+        const liveWrapper = document.getElementById('live-countdown-wrapper');
+        const milestoneWrapper = document.getElementById('celebration-milestone-wrapper');
+        const daysEl = document.getElementById('cd-days');
+        const hoursEl = document.getElementById('cd-hours');
+        const minsEl = document.getElementById('cd-minutes');
+        const secsEl = document.getElementById('cd-seconds');
+
+        const targetTimestamp = new Date('2026-04-16T18:30:00').getTime();
+
+        function pad(num) {
+          return String(Math.max(0, num)).padStart(2, '0');
+        }
+
+        function showCelebratoryBadge() {
+          if (liveWrapper) liveWrapper.classList.add('hidden');
+          if (milestoneWrapper) milestoneWrapper.classList.remove('hidden');
+        }
+
+        function updateTimer() {
+          const now = Date.now();
+          const diff = targetTimestamp - now;
+
+          if (diff <= 0) {
+            showCelebratoryBadge();
+            return false;
+          }
+
+          const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+          const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+          const minutes = Math.floor((diff / (1000 * 60)) % 60);
+          const seconds = Math.floor((diff / 1000) % 60);
+
+          if (daysEl) daysEl.textContent = pad(days);
+          if (hoursEl) hoursEl.textContent = pad(hours);
+          if (minsEl) minsEl.textContent = pad(minutes);
+          if (secsEl) secsEl.textContent = pad(seconds);
+          return true;
+        }
+
+        const stillCounting = updateTimer();
+        if (stillCounting) {
+          const intervalId = setInterval(() => {
+            if (!updateTimer()) {
+              clearInterval(intervalId);
+            }
+          }, 1000);
+        }
+      }
+
+      /* ---------------------------------------------------------------------
+       * 4. FULL-SCREEN PHOTO LIGHTBOX MODAL
+       * ------------------------------------------------------------------- */
+      function initLightbox() {
+        const lightbox = document.getElementById('photo-lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxTitle = document.getElementById('lightbox-title');
+        const lightboxSubtitle = document.getElementById('lightbox-subtitle');
+        const closeBtn = document.getElementById('lightbox-close-btn');
+        const prevBtn = document.getElementById('lightbox-prev-btn');
+        const nextBtn = document.getElementById('lightbox-next-btn');
+        const triggers = document.querySelectorAll('[data-lightbox-index]');
+
+        const galleryItems = [
+          {
+            src: '1000388585.jpg',
+            fallbackSrc: 'https://placehold.co/600x800/FAF4EB/A61C5B?text=Soumen+%26+Swata',
+            title: 'Soumen & Swata',
+            subtitle: 'Engagement Ceremony • 16 April 2026'
+          },
+          {
+            src: '1000389022.png',
+            altSrc: '1000389022.jpg',
+            fallbackSrc: 'https://placehold.co/800x600/FAF4EB/A61C5B?text=Blessed+Beginnings',
+            title: 'Blessed Beginnings',
+            subtitle: 'With divine grace & family blessings'
+          },
+          {
+            src: '1000388717.jpg',
+            fallbackSrc: 'https://placehold.co/800x600/FAF4EB/A61C5B?text=Together+Forever',
+            title: 'Together Forever',
+            subtitle: 'Hand in hand into a lifetime of love'
+          }
+        ];
+
+        let currentIndex = 0;
+
+        function renderSlide(index) {
+          currentIndex = (index + galleryItems.length) % galleryItems.length;
+          const item = galleryItems[currentIndex];
+          if (!lightboxImg) return;
+
+          lightboxImg.onerror = function () {
+            if (item.altSrc && !lightboxImg.dataset.triedAlt) {
+              lightboxImg.dataset.triedAlt = '1';
+              lightboxImg.src = item.altSrc;
+            } else {
+              lightboxImg.onerror = null;
+              lightboxImg.src = item.fallbackSrc;
+            }
+          };
+          delete lightboxImg.dataset.triedAlt;
+          lightboxImg.src = item.src;
+          lightboxImg.alt = item.title;
+
+          if (lightboxTitle) lightboxTitle.textContent = item.title;
+          if (lightboxSubtitle) lightboxSubtitle.textContent = item.subtitle;
+        }
+
+        function openLightbox(index) {
+          renderSlide(index);
+          if (lightbox) {
+            lightbox.classList.remove('hidden');
+            lightbox.classList.add('flex');
+            document.body.classList.add('overflow-hidden');
+          }
+        }
+
+        function closeLightbox() {
+          if (lightbox) {
+            lightbox.classList.add('hidden');
+            lightbox.classList.remove('flex');
+            document.body.classList.remove('overflow-hidden');
+          }
+        }
+
+        triggers.forEach((btn) => {
+          btn.addEventListener('click', () => {
+            const idx = parseInt(btn.getAttribute('data-lightbox-index'), 10) || 0;
+            openLightbox(idx);
+          });
+        });
+
+        if (closeBtn) closeBtn.addEventListener('click', closeLightbox);
+        if (prevBtn) prevBtn.addEventListener('click', () => renderSlide(currentIndex - 1));
+        if (nextBtn) nextBtn.addEventListener('click', () => renderSlide(currentIndex + 1));
+
+        if (lightbox) {
+          lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) closeLightbox();
+          });
+        }
+
+        document.addEventListener('keydown', (e) => {
+          if (!lightbox || lightbox.classList.contains('hidden')) return;
+          if (e.key === 'Escape') closeLightbox();
+          if (e.key === 'ArrowLeft') renderSlide(currentIndex - 1);
+          if (e.key === 'ArrowRight') renderSlide(currentIndex + 1);
+        });
+      }
+
+      /* ---------------------------------------------------------------------
+       * 5. SHARE INVITATION BUTTON (WEB SHARE API + CLIPBOARD FALLBACK)
+       * ------------------------------------------------------------------- */
+      function initShareButton() {
+        const shareBtn = document.getElementById('share-invite-btn');
+        const toast = document.getElementById('share-feedback-toast');
+        if (!shareBtn) return;
+
+        const shareTitle = 'Soumen & Swata — Engagement Ceremony Invitation';
+        const shareText =
+          'Together with their families, Soumen & Swata joyfully invite you to celebrate their Engagement Ceremony on Thursday, 16 April 2026 (6:30 PM Onwards) at The Royal Orchid Banquet, Kolkata.';
+
+        function showToast(message) {
+          if (!toast) return;
+          toast.textContent = message;
+          toast.classList.remove('hidden');
+          setTimeout(() => {
+            toast.classList.add('hidden');
+          }, 3500);
+        }
+
+        function copyToClipboardFallback(textToCopy) {
+          const tempInput = document.createElement('textarea');
+          tempInput.value = textToCopy;
+          tempInput.setAttribute('readonly', '');
+          tempInput.style.position = 'fixed';
+          tempInput.style.opacity = '0';
+          document.body.appendChild(tempInput);
+          tempInput.select();
+          try {
+            document.execCommand('copy');
+            showToast('Invitation text & link copied to clipboard!');
+          } catch (err) {
+            showToast('Ready to share with your loved ones!');
+          }
+          document.body.removeChild(tempInput);
+        }
+
+        shareBtn.addEventListener('click', async () => {
+          const shareUrl = window.location.href;
+          if (navigator.share) {
+            try {
+              await navigator.share({
+                title: shareTitle,
+                text: shareText,
+                url: shareUrl
+              });
+            } catch (err) {
+              if (err && err.name !== 'AbortError') {
+                copyToClipboardFallback(`${shareText}\n${shareUrl}`);
+              }
+            }
+          } else {
+            copyToClipboardFallback(`${shareText}\n${shareUrl}`);
+          }
+        });
+      }
+
+      /* ---------------------------------------------------------------------
+       * 6. WEB AUDIO API AMBIENT CELESTA MUSIC BOX
+       * ------------------------------------------------------------------- */
+      class AmbientCelestaBox {
+        constructor() {
+          this.ctx = null;
+          this.isPlaying = false;
+          this.timerId = null;
+          this.stepIndex = 0;
+
+          // Romantic celesta arpeggio melody (F Major / D Minor)
+          this.notes = [
+            349.23, 440.00, 523.25, 659.25,
+            587.33, 523.25, 440.00, 349.23,
+            293.66, 349.23, 440.00, 523.25,
+            493.88, 440.00, 392.00, 329.63,
+            349.23, 440.00, 523.25, 698.46,
+            659.25, 587.33, 523.25, 440.00,
+            392.00, 493.88, 587.33, 659.25,
+            523.25, 440.00, 392.00, 349.23
+          ];
+        }
+
+        playNote(freq) {
+          if (!this.ctx || !this.isPlaying) return;
+          const now = this.ctx.currentTime;
+
+          const osc = this.ctx.createOscillator();
+          const overtone = this.ctx.createOscillator();
+          const gain = this.ctx.createGain();
+          const overtoneGain = this.ctx.createGain();
+
+          osc.type = 'sine';
+          osc.frequency.setValueAtTime(freq, now);
+
+          overtone.type = 'triangle';
+          overtone.frequency.setValueAtTime(freq * 2, now);
+
+          gain.gain.setValueAtTime(0.0001, now);
+          gain.gain.exponentialRampToValueAtTime(0.06, now + 0.025);
+          gain.gain.exponentialRampToValueAtTime(0.0001, now + 1.85);
+
+          overtoneGain.gain.setValueAtTime(0.0001, now);
+          overtoneGain.gain.exponentialRampToValueAtTime(0.012, now + 0.015);
+          overtoneGain.gain.exponentialRampToValueAtTime(0.0001, now + 0.55);
+
+          osc.connect(gain);
+          overtone.connect(overtoneGain);
+          overtoneGain.connect(gain);
+          gain.connect(this.ctx.destination);
+
+          osc.start(now);
+          overtone.start(now);
+          osc.stop(now + 1.9);
+          overtone.stop(now + 0.6);
+        }
+
+        toggle() {
+          try {
+            if (!this.ctx) {
+              const AudioCtx = window.AudioContext || window.webkitAudioContext;
+              this.ctx = new AudioCtx();
+            }
+
+            if (this.ctx.state === 'suspended') {
+              this.ctx.resume();
+            }
+
+            this.isPlaying = !this.isPlaying;
+
+            if (this.isPlaying) {
+              this.playNote(this.notes[this.stepIndex % this.notes.length]);
+              this.stepIndex++;
+              this.timerId = setInterval(() => {
+                this.playNote(this.notes[this.stepIndex % this.notes.length]);
+                this.stepIndex++;
+              }, 620);
+            } else {
+              clearInterval(this.timerId);
+              this.timerId = null;
+            }
+          } catch (err) {
+            this.isPlaying = false;
+          }
+
+          return this.isPlaying;
+        }
+      }
+
+      function initMusicToggle() {
+        const btn = document.getElementById('music-toggle-btn');
+        const idleIcon = document.getElementById('music-icon-idle');
+        const playingIcon = document.getElementById('music-icon-playing');
+        const label = document.getElementById('music-label');
+        const musicBox = new AmbientCelestaBox();
+
+        if (!btn) return;
+
+        btn.addEventListener('click', () => {
+          const playing = musicBox.toggle();
+          if (playing) {
+            idleIcon?.classList.add('hidden');
+            playingIcon?.classList.remove('hidden');
+            playingIcon?.classList.add('flex');
+            if (label) label.textContent = 'Music On';
+          } else {
+            playingIcon?.classList.add('hidden');
+            playingIcon?.classList.remove('flex');
+            idleIcon?.classList.remove('hidden');
+            if (label) label.textContent = 'Play Music';
+          }
+        });
+      }
+
+      /* ---------------------------------------------------------------------
+       * INITIALIZE ALL MODULES
+       * ------------------------------------------------------------------- */
+      window.addEventListener('resize', resizeCanvas);
+      window.addEventListener('DOMContentLoaded', () => {
+        initParticles();
+        animateCanvas();
+        initScrollAnimations();
+        initCountdown();
+        initLightbox();
+        initShareButton();
+        initMusicToggle();
+      });
+    })();
+  </script>
+</body>
+</html>
